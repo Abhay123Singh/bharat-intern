@@ -1,0 +1,104 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fcfefb;
+  color: #101c08;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    color: red;
+    text-align: center;
+}
+
+.container {
+  background-color: rgb(0 0 0 / 3%);
+  width: 80%;
+  padding: 2rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+#display--section {
+  font-size: x-large;
+  min-height: 100px;
+  margin-bottom: 6.3rem;
+  text-align: center;
+}
+
+#temp {
+    width: 20%;
+    height: 0.75rem;
+    padding: 12px;
+    font-size: medium;
+    border-radius: 4px;
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.temp--c {
+    color: #762ea3;
+}
+
+.display--converted {
+    color: #626262;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 0.55rem 2.5rem;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: #762ea3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #431a5d;
+}
+
+.divider {
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 5rem;
+    margin: -22px auto 50px auto;
+    border-radius: 10px;
+}
+
+
+/* For removing arrow button on input field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 600px) {
+    #temp {
+        width: 80%;
+    }
+  }
